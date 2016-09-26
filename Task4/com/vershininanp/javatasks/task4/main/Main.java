@@ -1,6 +1,7 @@
 package com.vershininanp.javatasks.task4.main;
 
 import com.vershininanp.javatasks.task4.simplelinkedlist.SimpleLinkedList;
+import com.vershininanp.javatasks.task4.listiterator.ListIterator;
 
 public class Main {	
 
@@ -14,15 +15,12 @@ public class Main {
 		
 		linkedlist.removeFirst();		
 		linkedlist.addFirst("Bye ");
-		for (int i = 0; i < linkedlist.size(); i++) {		
-			System.out.println(linkedlist.get(i)+ "\n" + linkedlist.getPrev(i) + "\n" + linkedlist.getNext(i) + "\n");
-		}
-		
 		linkedlist.removeLast();				
 		linkedlist.add("faces ");		
-		for (int i = 0; i < linkedlist.size(); i++) {		
-			System.out.println(linkedlist.get(i)+ "\n");
+				
+		ListIterator<String> iteratorLList = linkedlist.iterator();
+		while(iteratorLList.hasNext()){		
+			System.out.println(iteratorLList.next());
 		}
-		
 	}
 }

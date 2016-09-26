@@ -1,8 +1,10 @@
 package com.vershininanp.javatasks.task4.simplelinkedlist;
 
 import com.vershininanp.javatasks.task4.node.Node;
+import com.vershininanp.javatasks.task4.listiterator.ListIterator;
+import java.util.Iterator;
 
-public class SimpleLinkedList<E> {	
+public class SimpleLinkedList<E> implements Iterable<E> {	
 
 	private Node<E> head;    
     private int countElements;
@@ -141,8 +143,15 @@ public class SimpleLinkedList<E> {
 		}
 		return (E)elementCurrent;
  
-	}		
+	}	
+	
+	@Override
+	public ListIterator<E> iterator() {
+        return new ListIterator<E>(this);
+		
+    }
 }
+
 
 
 
