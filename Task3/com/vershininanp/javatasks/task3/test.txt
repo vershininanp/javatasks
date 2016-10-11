@@ -1,0 +1,6 @@
+13 com.vershininanp.javatasks.task3.deansoffice.DeansOffice
+16 com.vershininanp.javatasks.task3.deansoffice.DeansOffice
+10 com.vershininanp.javatasks.task3.educationalroom.EducationalRoom
+17 com.vershininanp.javatasks.task3.educationalroom.EducationalRoom
+15 com.vershininanp.javatasks.task3.lectureroom.LectureRoom
+20 com.vershininanp.javatasks.task3.lectureroom.LectureRoom
